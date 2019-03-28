@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 540px;
+    margin-bottom: 80px;
+    position: relative;
+    width: 402px;
+}
+
+a {
+    outline:none;
+}
+
+#corps {
+    background-image: url("pic.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 192px;
+    position: relative;
+}
+
+#placeholder {
+    width: 210px;
+}
+
+.cercle {
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    filter: opacity(70%);
+    z-index: 9;
+}
+
+.cercle:hover {
+    background-color: blue;
+}
+
+.desc {
+    height: 0.5%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-align: left;
+    overflow: hidden;
+
+    filter: opacity(0%);
+    transition: filter 300ms;
+}
+
+#epaule {
+  top: 130px;
+  left: 150px;
+  position: relative;
+}
+
+#epaule:hover ~ #placeholder #desc-epaule {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#coude {
+  top: 190px;
+  left: 220px;
+  position: relative;
+}
+
+#coude:hover ~ #placeholder #desc-coude {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#poignet {
+  top: 220px;
+  left: 100px;
+  position: relative;
+}
+
+#poignet:hover ~ #placeholder #desc-poignet {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#hanche {
+  top: 260px;
+  left: 105px;
+  position: relative;
+}
+
+#hanche:hover ~ #placeholder #desc-hanche {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#genou {
+  top: 330px;
+  left: 105px;
+  position: relative;
+}
+
+#genou:hover ~ #placeholder #desc-genou {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#pied {
+  top: 430px;
+  left: 120px;
+  position: relative;
+}
+
+#pied:hover ~ #placeholder #desc-pied {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
